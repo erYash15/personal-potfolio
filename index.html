@@ -1,1296 +1,1417 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Yash Gupta"
+              width="80"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Yash Gupta">Yash Gupta</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Yash Gupta" width="80">
-        </figure>
+            <p class="title">Data Scientist</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Yash Gupta">Yash Gupta</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">Data Scientist</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="eryash15@gmail.com" class="contact-link"
+                  >eryash15@gmail.com</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-github"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Github</p>
 
-          <li class="contact-item">
+                <a href="https://github.com/erYash15" class="contact-link"
+                  >github/@eryash15</a
+                >
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-              <a href="eryash15@gmail.com" class="contact-link">eryash15@gmail.com</a>
-            </div>
+                <address>Gurgaon , Haryana , India</address>
+              </div>
+            </li>
+          </ul>
 
-          </li>
+          <div class="separator"></div>
 
-          <li class="contact-item">
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="logo-github"></ion-icon>
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-kaggle"></i>
+              </a>
+            </li>
 
-            </div>
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-medium"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-            <div class="contact-info">
-              <p class="contact-title">Github</p>
-
-              <a href="https://github.com/erYash15" class="contact-link">github/@eryash15</a>
-            </div>
-
-          </li>
-
-          
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Gurgaon , Haryana , India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <i class="fa-brands fa-kaggle"></i>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <i class="fa-brands fa-medium"></i>
-
-
-
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p>
+              I'm Data Scientist and Machine Learning Engineer from India,
+              working in demand forecasting and transformers. I enjoy turning
+              complex problems into simple, beautiful and intuitive solutions.
+            </p>
 
-        <section class="about-text">
-          <p>
-            I'm Data Scientist and Machine Learning Engineer from India, working in demand forecasting and transformers.
-            I enjoy turning complex problems into simple, beautiful and intuitive solutions.
-          </p>
+            <p>
+              My job is to build data related solutions so that it is functional
+              and user-friendly but at the same time attractive. Moreover, I add
+              personal touch to your product and make sure that is eye-catching
+              and easy to use. My aim is to bring across your message and
+              identity in the most creative way. I created web design for many
+              famous brand companies.
+            </p>
+          </section>
 
-          <p>
-            My job is to build data related solutions so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
-          </p>
-        </section>
-
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
 
-          <ul class="service-list">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Generative Artificial Intelligence
+                  </h4>
 
-            <li class="service-item">
+                  <p class="service-item-text">
+                    developing algorithms and models that autonomously generate
+                    new content like images, text, or music based on learned
+                    patterns and data, often using techniques such as neural
+                    networks and deep learning.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Generative Artificial Intelligence</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Forecasting</h4>
 
-                <p class="service-item-text">
-                  developing algorithms and models that autonomously generate new content like images, text, or music based on learned patterns and data, often using techniques such as neural networks and deep learning.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    leveraging data-driven models and algorithms to predict
+                    future trends and outcomes, essential for decision-making in
+                    various domains like finance, weather, and resource
+                    planning.
+                  </p>
+                </div>
+              </li>
 
-            </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
 
-            <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Natural Language Processing
+                  </h4>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
+                  <p class="service-item-text">
+                    develop models and algorithms to analyze and understand
+                    human language, enabling applications like sentiment
+                    analysis, chatbots, and text summarization.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Forecasting</h4>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
 
-                <p class="service-item-text">
-                  leveraging data-driven models and algorithms to predict future trends and outcomes, essential for decision-making in various domains like finance, weather, and resource planning.
-                </p>
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Computer Vision</h4>
 
-            </li>
+                  <p class="service-item-text">
+                    focusing on developing algorithms and models that enable
+                    machines to interpret and understand visual information from
+                    images or videos, used in applications such as object
+                    detection, image classification, and autonomous driving.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Natural Language Processing</h4>
-
-                <p class="service-item-text">
-                  develop models and algorithms to analyze and understand human language, enabling applications like sentiment analysis, chatbots, and text summarization.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Computer Vision</h4>
-
-                <p class="service-item-text">
-                  focusing on developing algorithms and models that enable machines to interpret and understand visual information from images or videos, used in applications such as object detection, image classification, and autonomous driving.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials
         -->
 
-        <section class="testimonials">
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Daniel lewis"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-          <ul class="testimonials-list has-scrollbar">
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Dr. Robin Singh Bhadoria
+                  </h4>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      I know Mr.Yash since his first day of the college as he is
+                      a quick learner and well motivated student. I also
+                      mentored him for his career choice and research work
+                      specially into Data Science and Algorithms using Python. I
+                      wish him good luck and a bright career.
+                    </p>
+                  </div>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                  <time
+                    class="testimonials-date"
+                    datetime="2020-07-09"
+                    style="display: none"
+                    >9 July, 2020</time
+                  >
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-2.png"
+                      alt="Jessica miller"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Dr. Pooja Jain
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      I know Mr.Yash since his first day of the college as he is
+                      a quick learner and well motivated student. I also
+                      mentored him for his career choice and research work
+                      specially into Data Science and Algorithms using Python. I
+                      wish him good luck and a bright career.
+                    </p>
+                  </div>
+
+                  <time
+                    class="testimonials-date"
+                    datetime="2020-07-04"
+                    style="display: none"
+                    >4 July, 2020</time
+                  >
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Testimonials Modal -->
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
                 </figure>
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dr. Robin Singh Bhadoria</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+                <time class="modal-date" data-modal-date>9 July, 2020</time>
+                <div data-modal-text>
                   <p>
-                    I know Mr.Yash since his first day of the college as he is a quick learner and well motivated student. I also mentored him for his career choice and research work specially into Data Science and Algorithms using Python. I wish him good luck and a bright career.
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
                   </p>
                 </div>
-
               </div>
-            </li>
+            </section>
+          </div>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dr. Pooja Jain</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Yash is very bright student. I have taught/mentored him for 2 year. He is AI Enthusiast, Software Developer. He impresses every time with his learning towards new technology. He is remarkable in Data Science and Natural Language Processing. He has done 3-4 projects under my guidance. He is very punctual with deadline and result. Apart from this, he is friendly and helpful to all his teachers and college mates.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <!-- <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li> -->
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-          <section class="testimonials-modal">
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
-            </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
-          </section>
+                <time datetime="2020-07-09">9 July, 2020</time>
 
-        </div>
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
 
-
-        <!--
+          <!--
           - clients
         -->
 
-        <section class="clients">
+          <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
 
-          <h3 class="h3 clients-title">Clients</h3>
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-1-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-          <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-2-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-3-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-4-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-5-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-6-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
+          <header>
+            <div class="header-content">
+              <h2 class="h2 article-title">Resume</h2>
+              <a
+                href="assets/images/resume/Yash_Gupta_2nd (1).pdf"
+                download
+                class="download-button"
+                >Download Resume</a
+              >
+            </div>
+          </header>
 
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="school-outline"></ion-icon>
+              </div>
 
-        <header>
-          <div class="header-content">
-            <h2 class="h2 article-title">Resume</h2>
-            <a href="assets/images/resume/Yash_Gupta_2nd (1).pdf" download class="download-button">Download Resume</a>
-          </div>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="school-outline"></ion-icon>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Indian Institute of Information Technology, Nagpur
+                </h4>
 
-          <ol class="timeline-list">
-            
-            <li class="timeline-item">
+                <span>2017 — 2021</span>
 
-              <h4 class="h4 timeline-item-title">Indian Institute of Information Technology, Nagpur</h4>
+                <p class="timeline-texts">
+                  Computer Science & Engineering | Artificial Intelligence
+                </p>
+              </li>
+            </ol>
+          </section>
 
-              <span>2017 — 2021</span>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="briefcase-outline"></ion-icon>
+              </div>
 
-              <p class="timeline-texts">
-                Computer Science & Engineering | Artificial Intelligence
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="briefcase-outline"></ion-icon>
-
+              <h3 class="h3">Experience</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">ADIDAS | Data Scientist</h4>
 
-          <ol class="timeline-list">
+                <span class="timeline-texts"
+                  >May 2023 - Current | Gurgaon, Haryana, India</span
+                >
 
-            <li class="timeline-item">
+                <ul class="timeline-details">
+                  <li>
+                    Developed a neural sequence model transformer for in-season
+                    demand forecasting, gradient boosting model for pre-season
+                    demand forecasting and productionized them using AWS
+                    SageMaker.
+                  </li>
+                  <li>
+                    Exploring advancements and methods to enhance forecasts
+                    aligned with specific business needs through
+                    experimentation.
+                  </li>
+                  <li>
+                    Supported horizontal team building new product that
+                    estimates true consumer demand when products are partially
+                    or completely out-of-stock.
+                  </li>
+                  <li>
+                    Created a Generative AI PoC that generates product
+                    descriptions using a fine-tuned large language model.
+                  </li>
+                </ul>
+              </li>
 
-              <h4 class="h4 timeline-item-title">ADIDAS | Data Scientist</h4>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  TATA CONSULTANCY SERVICES | Data Scientist
+                </h4>
 
-              <span class="timeline-texts">May 2023 - Current | Gurgaon, Haryana, India</span>
+                <span class="timeline-texts"
+                  >May 2021 - May 2023 | Pune, Maharashtra, India</span
+                >
 
-              <ul class="timeline-details">
-                <li>Developed a neural sequence model transformer for in-season demand forecasting, gradient boosting model for pre-season demand forecasting and productionized them using AWS SageMaker.</li>
-                <li>Exploring advancements and methods to enhance forecasts aligned with specific business needs through experimentation.</li>
-                <li>Supported horizontal team building new product that estimates true consumer demand when products are partially or completely out-of-stock.</li>
-                <li>Created a Generative AI PoC that generates product descriptions using a fine-tuned large language model.</li>
-              </ul>
-              
+                <ul class="timeline-details">
+                  <li>
+                    Delivered 2 digital transformation projects geared towards
+                    high-stake business challenges in SAS Migration, Data
+                    Engineering & Machine Learning ensuring a smoother
+                    experience for clients & exceeding business targets.
+                    (TCS@Nielsen)
+                  </li>
+                  <li>
+                    Successfully rebuilt the sales forecasting model
+                    facilitating market demand analysis, cross-sell, up-sell,
+                    and offer coupons by reducing the RMSE score beyond 10%
+                    compared to existing model.
+                  </li>
+                </ul>
+              </li>
 
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  PAY 1 | Data Science Intern
+                </h4>
 
-            <li class="timeline-item">
+                <span class="timeline-texts"
+                  >May 2020 - Nov 2020 | Mumbai, Maharashtra</span
+                >
 
-              <h4 class="h4 timeline-item-title">TATA CONSULTANCY SERVICES | Data Scientist</h4>
+                <ul class="timeline-details">
+                  <li>
+                    Developed face recognition system for Aadhaar & Pan Card
+                    based on Convolution Neural Network attaining an accuracy of
+                    92.02% reducing the cost from 3rd party API and human
+                    efforts.
+                  </li>
+                  <li>
+                    Real-time data extraction from multiple sports websites to
+                    develop a fantasy cricket application.
+                  </li>
+                </ul>
+              </li>
 
-              <span class="timeline-texts">May 2021 - May 2023 | Pune, Maharashtra, India</span>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  IIT BHU | Research Trainee
+                </h4>
 
-              <ul class="timeline-details">
-                <li>Delivered 2 digital transformation projects geared towards high-stake business challenges in SAS Migration, Data Engineering & Machine Learning ensuring a smoother experience for clients & exceeding business targets. (TCS@Nielsen)</li>
-                <li>Successfully rebuilt the sales forecasting model facilitating market demand analysis, cross-sell, up-sell, and offer coupons by reducing the RMSE score beyond 10% compared to existing model.</li>
-              </ul>
-              
-              
-            </li>
+                <span class="timeline-texts">May 2019 - Jul 2019</span>
 
-            <li class="timeline-item">
+                <ul class="timeline-details">
+                  <li>
+                    Work with a Team of 5 members comprising of professors, PhDs
+                    and interns. The topic of the research was Multivariate Time
+                    Series Classification on ECG Dataset for early prediction of
+                    heart disease without compromising accuracy.
+                  </li>
+                  <li>
+                    Key Features were Pattern Recognition, Features Extraction
+                    and Features selection.
+                  </li>
+                  <li>
+                    Key Learning includes:<br />
+                    <p>
+                      ➙ Sense of Responsibility over expensive Hardware and
+                      Software.<br />
+                      ➙ Research environment and memory management.<br />
+                      ➙ Work under deadlines & pressure, since it was 2 month
+                      long internship.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </section>
 
-              <h4 class="h4 timeline-item-title">PAY 1 | Data Science Intern</h4>
+          <!-- Certificatons -->
 
-              <span class="timeline-texts">May 2020 - Nov 2020 | Mumbai, Maharashtra</span>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="ribbon-outline"></ion-icon>
+              </div>
 
-              <ul class="timeline-details">
-                <li>Developed face recognition system for Aadhaar & Pan Card based on Convolution Neural Network attaining an accuracy of 92.02% reducing the cost from 3rd party API and human efforts.</li>
-                <li>Real-time data extraction from multiple sports websites to develop a fantasy cricket application.</li>
-              </ul>
-              
-
-            </li>
-
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">IIT BHU | Research Trainee</h4>
-
-              <span class="timeline-texts" >May 2019 - Jul 2019</span>
-
-              <ul class="timeline-details">
-                <li>Work with a Team of 5 members comprising of professors, PhDs and interns. The topic of the research was Multivariate Time Series Classification on ECG Dataset for early prediction of heart disease without compromising accuracy.</li>
-                <li>Key Features were Pattern Recognition, Features Extraction and Features selection.</li>
-                <li>Key Learning includes:<br>
-                  <p>
-                    ➙ Sense of Responsibility over expensive Hardware and Software.<br>
-                    ➙ Research environment and memory management.<br>
-                    ➙ Work under deadlines & pressure, since it was 2 month long internship.
-                  </p>
-                  
-                </li>
-              </ul>
-              
-
-            </li>
-
-          </ol>
-
-        </section>
-
-
-        <!-- Certificatons -->
-         
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="ribbon-outline"></ion-icon>
+              <h3 class="h3">Certifications</h3>
             </div>
 
-            <h3 class="h3">Certifications</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Applied A.I Courese</h4>
 
-          <ol class="timeline-list">
+                <span>May 2023 - Current | Gurgaon, Haryana, India</span>
+              </li>
 
-            <li class="timeline-item">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Mlops with AWS</h4>
 
-              <h4 class="h4 timeline-item-title">Applied A.I Courese</h4>
+                <span> Applied Roots ( now Scaler ) </span>
+              </li>
+            </ol>
+          </section>
 
-              <span>May 2023 - Current | Gurgaon, Haryana, India</span>
+          <!-- Certificatons -->
 
-            </li>
+          <!-- Skills -->
 
-            <li class="timeline-item">
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="construct-outline"></ion-icon>
+              </div>
 
-              <h4 class="h4 timeline-item-title">Mlops with AWS</h4>
-
-              <span> Applied Roots ( now Scaler ) </span>
-
-            </li>
-
-            
-
-          </ol>
-
-        </section>
-
-        
-        
-        
-        <!-- Certificatons -->
-
-
-
-        <!-- Skills -->
-       
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="construct-outline"></ion-icon>
+              <h3 class="h3">Skills</h3>
             </div>
 
-            <h3 class="h3">Skills</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">DATA SCIENCE:</h4>
 
-          <ol class="timeline-list">
+                <ul class="timeline-details">
+                  <li>Machine Learning</li>
+                  <li>Deep Learning</li>
+                  <li>Transformers</li>
+                  <li>Time-Series Data</li>
+                </ul>
+              </li>
 
-            <li class="timeline-item">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Mlops with AWS</h4>
 
-              <h4 class="h4 timeline-item-title">DATA SCIENCE:</h4>
+                <ul class="timeline-details">
+                  <li>Jenkins</li>
+                  <li>Amazon SageMaker</li>
+                  <li>CI / CD</li>
+                </ul>
+              </li>
 
-              <ul class="timeline-details">
-                <li> Machine Learning</li>
-                <li> Deep Learning</li>
-                <li> Transformers</li>
-                <li> Time-Series Data</li>
-              </ul>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Languages</h4>
 
-            </li>
+                <ul class="timeline-details">
+                  <li>Python</li>
+                  <li>SAS</li>
+                  <li>C++</li>
+                  <li>Sql</li>
+                </ul>
+              </li>
 
-            <li class="timeline-item">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Familiar FrameWorks</h4>
 
-              <h4 class="h4 timeline-item-title">Mlops with AWS</h4>
+                <ul class="timeline-details">
+                  <li>Numpy</li>
+                  <li>Pandas</li>
+                  <li>PySpark</li>
+                  <li>Pytorch</li>
+                  <li>Scikit-Learn</li>
+                  <li>TensorFlow</li>
+                  <li>Keras</li>
+                </ul>
+              </li>
+            </ol>
+          </section>
 
-              <ul class="timeline-details">
-                <li> Jenkins</li>
-                <li> Amazon SageMaker</li>
-                <li> CI / CD</li>
-              </ul>
+          <!-- Skills -->
+        </article>
 
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Languages</h4>
-
-              <ul class="timeline-details">
-                <li> Python</li>
-                <li> SAS</li>
-                <li> C++</li>
-                <li> Sql</li>
-              </ul>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Familiar FrameWorks</h4>
-
-              <ul class="timeline-details">
-                <li> Numpy   </li>
-                <li> Pandas</li>
-                <li> PySpark</li>
-                <li>Pytorch</li>
-                <li> Scikit-Learn</li>
-                <li>TensorFlow</li>
-                <li> Keras </li>
-              </ul>
-
-            </li>
-
-            
-
-          </ol>
-
-        </section>
-
-     <!-- Skills -->
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>MLOPs</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Natural Language Processing</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Computer Vision</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Forecasting</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Generative AI</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>MLOPs</button>
+              <li class="filter-item">
+                <button data-filter-btn>MLOPs</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Natural Language Processing</button>
+              <li class="filter-item">
+                <button data-filter-btn>Natural Language Processing</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Computer Vision</button>
+              <li class="filter-item">
+                <button data-filter-btn>Computer Vision</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Forecasting</button>
+              <li class="filter-item">
+                <button data-filter-btn>Forecasting</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Generative AI</button>
+              <li class="filter-item">
+                <button data-filter-btn>Generative AI</button>
               </li>
-
             </ul>
 
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>MLOPs</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Natural Language Processing</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Computer Vision</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Forecasting</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Generative AI</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <!-- MLOPs -->
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mlops"
+                data-video-url="./assets/images/videos/mlops.mp4"
+                data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models. However, the future is uncertain, and predictions may not always be accurate."
+                onclick="openVideoTab(this)"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Fundo</h3>
+
+                  <p class="project-category">MLOPs</p>
+                </a>
+              </li>
+
+              <!-- NLP -->
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="natural language processing"
+                data-video-url="./assets/images/videos/mlops.mp4"
+                data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models. However, the future is uncertain, and predictions may not always be accurate."
+                onclick="openVideoTab(this)"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Essay Rating</h3>
+
+                  <p class="project-category">Natural Language Processing</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="natural language processing"
+                data-video-url="./assets/images/videos/mlops.mp4"
+                data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models. However, the future is uncertain, and predictions may not always be accurate."
+                onclick="openVideoTab(this)"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-8.jpg"
+                      alt="task manager"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Google Q & A</h3>
+
+                  <p class="project-category">Natural Language Processing</p>
+                </a>
+              </li>
+
+              <!-- COMPUTER VISION -->
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="computer vision"
+                data-video-url="./assets/images/videos/mlops.mp4"
+                data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models."
+                onclick="openVideoTab(this)"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-7.png"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Avito Demand Prediction</h3>
+
+                  <p class="project-category">Computer Vision</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="computer vision"
+                data-video-url="./assets/images/videos/mlops.mp4"
+                data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models."
+                onclick="openVideoTab(this)"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-9.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Handwritten Signature Verification
+                  </h3>
+
+                  <p class="project-category">Computer Vision</p>
+                </a>
+              </li>
+
+              <!-- Forecasting -->
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="forecasting"
+                data-video-url="./assets/images/videos/mlops.mp4"
+                data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models. However, the future is uncertain, and predictions may not always be accurate. Unforeseen events can impact forecasts, so it’s important to review and update them as new information becomes available regularly."
+                onclick="openVideoTab(this)"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-7.png"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Future Demand Prediction</h3>
+
+                  <p class="project-category">Forecasting</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="forecasting"
+                data-video-url="./assets/images/videos/mlops.mp4"
+                data-description="Machine learning is a branch of artificial intelligence that enables algorithms to uncover hidden patterns within datasets, allowing them to make predictions on new, similar data without explicit programming for each task. Traditional machine learning combines data with statistical tools to predict outputs, yielding actionable insights. This technology finds applications in diverse fields such as image and speech recognition, natural language processing, recommendation systems, fraud detection, portfolio optimization, and automating tasks."
+                dataonclick="openVideoTab(this)"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-9.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Feature Engineering Time Series Data
+                  </h3>
+
+                  <p class="project-category">Forecasting</p>
+                </a>
+              </li>
+
+              <!-- Forecasting -->
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="generative ai"
+                data-video-url="./assets/images/videos/mlops.mp4"
+                data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models. However, the future is uncertain, and predictions may not always be accurate."
+                onclick="openVideoTab(this)"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-7.png"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Transformer Using Pytorch</h3>
+
+                  <p class="project-category">Generative AI</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="generative ai"
+                data-video-url="./assets/images/videos/mlops.mp4"
+                data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models. However, the future is uncertain, and predictions may not always be accurate."
+                onclick="openVideoTab(this)"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-9.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Fine-Tuning Pre-Trained Transformer
+                  </h3>
+
+                  <p class="project-category">Generative AI</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Modal Container -->
+        <div id="videoModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="video-container">
+              <video id="modalVideo" controls autoplay>
+                <source id="modalSource" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p id="modalDescription"></p>
           </div>
-
-          <ul class="project-list">
-
-
-            <!-- MLOPs -->
-
-           <li class="project-item  active" data-filter-item data-category="mlops" data-video-url="./assets/images/videos/mlops.mp4"  data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models. However, the future is uncertain, and predictions may not always be accurate." onclick="openVideoTab(this)">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">MLOPs</p>
-
-              </a>
-            </li> 
-
-           <!-- NLP -->
-
-            <li class="project-item  active" data-filter-item data-category="natural language processing" data-video-url="./assets/images/videos/mlops.mp4" data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models. However, the future is uncertain, and predictions may not always be accurate." onclick="openVideoTab(this)" >
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Essay Rating</h3>
-
-                <p class="project-category">Natural Language Processing</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="natural language processing" data-video-url="./assets/images/videos/mlops.mp4" data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models. However, the future is uncertain, and predictions may not always be accurate." onclick="openVideoTab(this)">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Google Q & A</h3>
-
-                <p class="project-category">Natural Language Processing</p>
-
-              </a>
-            </li>
-
-
-           <!-- COMPUTER VISION -->
-           
-            <li class="project-item  active" data-filter-item data-category="computer vision" data-video-url="./assets/images/videos/mlops.mp4" data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models." onclick="openVideoTab(this)">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Avito Demand Prediction</h3>
-
-                <p class="project-category">Computer Vision</p>
-
-              </a>
-            </li>     
-
-            <li class="project-item  active" data-filter-item data-category="computer vision" data-video-url="./assets/images/videos/mlops.mp4" data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models."  onclick="openVideoTab(this)" >
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Handwritten Signature Verification</h3>
-
-                <p class="project-category">Computer Vision</p>
-
-              </a>
-            </li>
-
-
-            <!-- Forecasting -->
-
-            <li class="project-item  active" data-filter-item data-category="forecasting" data-video-url="./assets/images/videos/mlops.mp4" data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models. However, the future is uncertain, and predictions may not always be accurate. Unforeseen events can impact forecasts, so it’s important to review and update them as new information becomes available regularly." onclick="openVideoTab(this)">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Future Demand Prediction</h3>
-
-                <p class="project-category">Forecasting</p>
-
-              </a>
-            </li>     
-
-            <li class="project-item  active" data-filter-item data-category="forecasting" data-video-url="./assets/images/videos/mlops.mp4" data-description="Machine learning is a branch of artificial intelligence that enables algorithms to uncover hidden patterns within datasets, allowing them to make predictions on new, similar data without explicit programming for each task. Traditional machine learning combines data with statistical tools to predict outputs, yielding actionable insights. This technology finds applications in diverse fields such as image and speech recognition, natural language processing, recommendation systems, fraud detection, portfolio optimization, and automating tasks." dataonclick="openVideoTab(this)">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Feature Engineering Time Series Data</h3>
-
-                <p class="project-category">Forecasting</p>
-
-              </a>
-            </li>
-
-
-            <!-- Forecasting -->
-
-            
-            <li class="project-item  active" data-filter-item data-category="generative ai" data-video-url="./assets/images/videos/mlops.mp4" data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models. However, the future is uncertain, and predictions may not always be accurate." onclick="openVideoTab(this)">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Transformer Using Pytorch</h3>
-
-                <p class="project-category">Generative AI</p>
-
-              </a>
-            </li>     
-
-            <li class="project-item  active" data-filter-item data-category="generative ai" data-video-url="./assets/images/videos/mlops.mp4" data-description="Forecasting involves making educated guesses about future events that could affect a company. Businesses can predict sales, finances, customer demand, and market changes by examining past data, trends, and patterns. Forecasting helps companies make decisions, plan, and manage risks. Methods include analyzing historical data and using statistical models. However, the future is uncertain, and predictions may not always be accurate." onclick="openVideoTab(this)">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fine-Tuning Pre-Trained Transformer</h3>
-
-                <p class="project-category">Generative AI</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-      <!-- Modal Container -->
-      <div id="videoModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <div class="video-container">
-            <video id="modalVideo" controls autoplay>
-              <source src="" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <p id="modalDescription"></p>
         </div>
-      </div>
-      
-      
-      
 
-
-
-
-      <!--
+        <!--
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="https://medium.com/tag/artificial-intelligence">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
 
-        <section class="blog-posts">
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-          <ul class="blog-posts-list">
+                      <span class="dot"></span>
 
-            <li class="blog-post-item">
-              <a href="https://medium.com/tag/artificial-intelligence">
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
+                    <h3 class="h3 blog-item-title">
+                      Design conferences in 2022
+                    </h3>
 
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Veritatis et quasi architecto beatae vitae dicta sunt,
+                      explicabo.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+              <li class="blog-post-item">
+                <a href="https://medium.com/tag/artificial-intelligence">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="https://medium.com/tag/artificial-intelligence">
+                    <h3 class="h3 blog-item-title">
+                      Best fonts every designer
+                    </h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis
+                      est eligendi.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@Coursesteach/deep-learning-part-1-86757cf5a0c3"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-3.jpg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="https://medium.com/@Coursesteach/deep-learning-part-1-86757cf5a0c3">
+                    <h3 class="h3 blog-item-title">Design digest #80</h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Excepteur sint occaecat cupidatat no proident, quis
+                      nostrum exercitationem ullam corporis suscipit.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@Coursesteach/deep-learning-part-1-86757cf5a0c3"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-4.jpg"
+                      alt="UI interactions of the week"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="https://medium.com/@Coursesteach/deep-learning-part-1-86757cf5a0c3">
+                    <h3 class="h3 blog-item-title">
+                      UI interactions of the week
+                    </h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Enim ad minim veniam, consectetur adipiscing elit, quis
+                      nostrud exercitation ullamco laboris nisi.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@raja.gupta20/generative-ai-for-beginners-part-1-introduction-to-ai-eadb5a71f07d"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-5.jpg"
+                      alt="The forgotten art of spacing"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="https://medium.com/@raja.gupta20/generative-ai-for-beginners-part-1-introduction-to-ai-eadb5a71f07d">
+                    <h3 class="h3 blog-item-title">
+                      The forgotten art of spacing
+                    </h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@fareedkhandev/prompt-engineering-complete-guide-2968776f0431"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-6.jpg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="https://medium.com/@fareedkhandev/prompt-engineering-complete-guide-2968776f0431">
+                    <h3 class="h3 blog-item-title">Design digest #79</h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Optio cumque nihil impedit uo minus quod maxime placeat,
+                      velit esse cillum.
+                    </p>
                   </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35017.15824996387!2d77.02824711844634!3d28.459496298490225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1c549d0f9c31%3A0xc8edf5b9a0eafe3d!2sGurugram%2C%20Haryana%2C%20India!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35017.15824996387!2d77.02824711844634!3d28.459496298490225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1c549d0f9c31%3A0xc8edf5b9a0eafe3d!2sGurugram%2C%20Haryana%2C%20India!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-          
-        </section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-        <section class="contact-form">
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
 
-          <h3 class="h3 form-title">Contact Form</h3>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
-          <form action="#" class="form" data-form>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://kit.fontawesome.com/f7eac2d951.js" crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f7eac2d951.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
