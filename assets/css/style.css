@@ -605,6 +605,7 @@ main {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  
 }
 
 
@@ -626,6 +627,7 @@ main {
   z-index: 20;
   pointer-events: none;
   visibility: hidden;
+  padding: 5px;
 }
 
 .modal-container::-webkit-scrollbar { display: none; }
@@ -676,12 +678,12 @@ main {
 
 .modal-close-btn {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 5px;
+  right: 5px;
   background: var(--onyx);
   border-radius: 8px;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -720,6 +722,8 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
+
+
 
 
 /**
@@ -824,10 +828,54 @@ main {
 }
 
 .timeline-text {
-  color: var(--light-gray);
+   color: var(--vegas-gold);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
+
+.timeline-texts {
+  color: var(--light-gray);
+ font-weight: var(--fw-300);
+ line-height: 1.6;
+}
+
+.timeline-item .timeline-texts {
+
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+ 
+}
+
+.header-content {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.download-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--eerie-black-1);
+  background-color: var(--vegas-gold);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: var(--orange-yellow-crayola);
+}
+
+
+
+/** Bullet styling **/
+
+
 
 
 /**
@@ -866,6 +914,28 @@ main {
   height: 100%;
   border-radius: inherit;
 }
+
+.timeline-details {
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 0; /* Remove default padding */
+}
+
+.timeline-details li {
+  position: relative; /* Positioning for the custom bullet */
+  padding-left: 20px; /* Space for the custom bullet */
+  margin-bottom: 5px; /* Space between list items */
+  color: var(--vegas-gold);
+}
+
+.timeline-details li::before {
+  content: "\2022"; /* Unicode for bullet point */
+  position: absolute; /* Positioning the bullet */
+  left: 0; /* Aligning bullet to the left */
+  color: var(--vegas-gold); /* Bullet color */
+  font-size: 20px; /* Bullet size */
+  text-shadow: 0 0 5px var(--vegas-gold), 0 0 10px var(--vegas-gold), 0 0 15px var(--vegas-gold); /* Continuous glow effect */
+}
+
 
 
 
@@ -1876,7 +1946,88 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
 	 * RESUME
 	 */
+   
 
   .timeline-text { max-width: 700px; }
 
+}
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 25%;
+  top: 10%;
+  width: fit-content; /* Full width */
+  height: fit-content; /* Full height */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #000; /* Black background for modal content */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Drop shadow for modal */
+  border-radius: 15px; /* Rounded corners */
+  text-align: center; /* Center-align text inside modal */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent overflow */
+  max-width: 800px; /* Maximum width for larger screens */
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000; /* Ensure close button is above modal content */
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+}
+
+.video-container {
+  position: relative;
+  width: 100%; /* Ensure the container fits its content */
+  border-radius: 15px; /* Rounded corners for video container */
+  overflow: hidden; /* Ensure rounded corners apply correctly */
+  background-color: #000; /* Black background for video container */
+  margin-bottom: 10px; /* Space between video and description */
+}
+
+video {
+  width: 100%; /* Ensure video takes full width of the container */
+  height: auto;
+  display: block;
+  border-radius: 15px; /* Rounded corners for video */
+}
+
+#modalDescription {
+  color: var(--orange-yellow-crayola); /* Set text color to white */
+  font-family: 'Courier New', Courier, monospace; /* Choose a different font family */
+  font-size: 16px; /* Adjust font size as needed */
+  padding: 10px; /* Add padding for better readability */
+  border-radius: 5px; /* Round the corners */
+  background-color: #000; /* Black background for description */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow */
+  max-width: 800px; /* Match the max width of the modal content */
+  margin-top: 10px; /* Space between video and description */
+}
+
+#modalDescription::before,
+#modalDescription::after {
+  content: '"';
+  font-size: 1.2em;
+  vertical-align: middle;
 }

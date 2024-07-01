@@ -114,6 +114,41 @@ for (let i = 0; i < filterBtn.length; i++) {
 }
 
 
+// // video-url
+
+// function openVideoTab(element) {
+//   const videoUrl = element.getAttribute('data-video-url');
+  
+//   if (!videoUrl) {
+//     console.error('No video URL found');
+//     return;
+//   }
+
+//   // Open a new tab
+//   const newTab = window.open('', '_blank');
+  
+//   // Construct the HTML content using a new HTMLDocument object
+//   const newDoc = newTab.document;
+//   newDoc.open();
+//   newDoc.write(`
+//     <html>
+//       <head>
+//         <title>Video</title>
+//       </head>
+//       <body style="margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh;">
+//         <video controls autoplay style="max-width: 100%; max-height: 100%;">
+//           <source src="${videoUrl}" type="video/mp4">
+//           Your browser does not support the video tag.
+//         </video>
+//       </body>
+//     </html>
+//   `);
+//   newDoc.close();
+// }
+
+
+
+
 
 // contact form variables
 const form = document.querySelector("[data-form]");
@@ -157,3 +192,43 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('videoModal');
+  const modalVideo = document.getElementById('modalVideo');
+  const modalDescription = document.getElementById('modalDescription');
+
+  modal.style.display = 'none'; // Hide modal initially
+  modalVideo.src = ''; // Clear video source initially
+  modalDescription.textContent = ''; // Clear text content initially
+
+  const projectItems = document.querySelectorAll('.project-item');
+
+  projectItems.forEach(item => {
+    item.addEventListener('click', function() {
+      const videoUrl = this.getAttribute('data-video-url');
+      const description = this.getAttribute('data-description');
+
+      if (videoUrl) {
+        modalVideo.src = videoUrl;
+        modalDescription.textContent = description;
+        modal.style.display = 'block';
+      }
+    });
+  });
+
+  modal.addEventListener('click', function(event) {
+    if (event.target === modal || event.target.className === 'close') {
+      modal.style.display = 'none';
+      modalVideo.pause();
+    }
+  });
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && modal.style.display === 'block') {
+      modal.style.display = 'none';
+      modalVideo.pause();
+    }
+  });
+});
