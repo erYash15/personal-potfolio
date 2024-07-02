@@ -806,12 +806,10 @@ main {
 
 .clients-item img {
   width: 100%;
+  height: 100px; /* Adjust this height as needed */
+  object-fit: contain; /* Ensure the aspect ratio is maintained */
   filter: grayscale(1);
   transition: var(--transition-1);
-}
-
-.clients-item img:hover {
-  filter: grayscale(0);
 }
 
 /*-----------------------------------*\
@@ -897,20 +895,22 @@ main {
 }
 
 .timeline-item .timeline-texts {
-  color: var(--light-gray);
+  color: var(--vegas-gold);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
 
+.timeline-textsup {
+  color: var(--light-gray);
+}
+
 .header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
 }
 
 .download-button {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 10px; /* This margin can be adjusted or removed as needed */
   padding: 5px 10px;
   font-size: 16px;
   font-weight: 500;
@@ -920,6 +920,8 @@ main {
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s;
+  position: relative;
+  top: -10px; /* Move the button up by 10px */
 }
 
 .download-button:hover {
@@ -979,7 +981,7 @@ main {
   position: relative; /* Positioning for the custom bullet */
   padding-left: 20px; /* Space for the custom bullet */
   margin-bottom: 5px; /* Space between list items */
-  color: var(--vegas-gold);
+  color: var(--light-gray);
 }
 
 .timeline-details li::before {
@@ -1167,6 +1169,106 @@ main {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+}
+
+/* video modal */
+
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 50%; /* Center horizontally */
+  top: 50%; /* Center vertically */
+  transform: translate(-50%, -50%); /* Center the modal precisely */
+  border-radius: 15px;
+  width: fit-content; /* Full width */
+  max-width: 100%; /* Ensure modal can take full width if needed */
+  height: fit-content; /* Full height */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #000; /* Black background for modal content */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Drop shadow for modal */
+  border-radius: 15px;
+  text-align: center; /* Center-align text inside modal */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent overflow */
+  max-width: 800px; /* Maximum width for larger screens */
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000; /* Ensure close button is above modal content */
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+}
+
+.video-container {
+  position: relative;
+  width: 100%; /* Ensure the container fits its content */
+  border-top-left-radius: 15px; /* Rounded corners for video container */
+  border-top-right-radius: 15px;
+  overflow: hidden; /* Ensure rounded corners apply correctly */
+  background-color: #000; /* Black background for video container */
+  margin-bottom: 10px; /* Space between video and description */
+}
+
+video {
+  width: 100%; /* Ensure video takes full width of the container */
+  height: auto;
+  display: block;
+  border-radius: 15px; /* Rounded corners for video */
+}
+
+#modalDescription {
+  color: var(--light-gray-70); /* Set text color to white */
+  font-family: "Courier New", Courier, monospace; /* Choose a different font family */
+  font-size: 16px; /* Default font size */
+  padding: 10px; /* Add padding for better readability */
+  border-radius: 5px; /* Round the corners */
+  background-color: #000; /* Black background for description */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow */
+  max-width: 800px; /* Match the max width of the modal content */
+  margin-top: 10px; /* Space between video and description */
+}
+
+#modalDescription::before,
+#modalDescription::after {
+  content: '"';
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+  .modal {
+    left: 0; /* Align modal to the left */
+    width: 100%; /* Take full width */
+    max-width: none; /* Remove max-width restriction */
+    transform: translate(
+      0,
+      -50%
+    ); /* Adjust transform for centering vertically */
+  }
+
+  #modalDescription {
+    font-size: 12px; /* Reduce font size for small screens */
+  }
 }
 
 /*-----------------------------------*\
@@ -2090,83 +2192,4 @@ textarea.form-input::-webkit-resizer {
   .timeline-text {
     max-width: 700px;
   }
-}
-
-.modal {
-  display: none;
-  position: fixed; /* Stay in place */
-  z-index: 9999; /* Sit on top */
-  left: 25%;
-  top: 10%;
-  border-radius: 15px;
-  width: fit-content; /* Full width */
-  height: fit-content; /* Full height */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content {
-  background-color: #000; /* Black background for modal content */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Drop shadow for modal */
-  border-radius: 15px;
-  text-align: center; /* Center-align text inside modal */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; /* Prevent overflow */
-  max-width: 800px; /* Maximum width for larger screens */
-}
-
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 30px;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 10000; /* Ensure close button is above modal content */
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-}
-
-.video-container {
-  position: relative;
-  width: 100%; /* Ensure the container fits its content */
-  border-top-left-radius: 15px; /* Rounded corners for video container */
-  border-top-right-radius: 15px;
-  overflow: hidden; /* Ensure rounded corners apply correctly */
-  background-color: #000; /* Black background for video container */
-  margin-bottom: 10px; /* Space between video and description */
-}
-
-video {
-  width: 100%; /* Ensure video takes full width of the container */
-  height: auto;
-  display: block;
-  border-radius: 15px; /* Rounded corners for video */
-}
-
-#modalDescription {
-  color: var(--orange-yellow-crayola); /* Set text color to white */
-  font-family: "Courier New", Courier, monospace; /* Choose a different font family */
-  font-size: 16px; /* Adjust font size as needed */
-  padding: 10px; /* Add padding for better readability */
-  border-radius: 5px; /* Round the corners */
-  background-color: #000; /* Black background for description */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow */
-  max-width: 800px; /* Match the max width of the modal content */
-  margin-top: 10px; /* Space between video and description */
-}
-
-#modalDescription::before,
-#modalDescription::after {
-  content: '"';
-  font-size: 1.2em;
-  vertical-align: middle;
 }
